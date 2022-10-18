@@ -46,13 +46,13 @@ public class Produkt {
     {
         double verkaufte1=this.verkaufteJahr1;
         double produzierte1=this.produzierteJahr1;
-        return (produzierte1/verkaufte1)*100;
+        return (verkaufte1/produzierte1)*100;
     }
     public double getNachfrageJahr2()
     {
         double verkaufte2=this.verkaufteJahr2;
         double produzierte2=this.produzierteJahr2;
-        return (produzierte2/verkaufte2)*100;
+        return (verkaufte2/produzierte2)*100;
     }
 
 
@@ -80,7 +80,7 @@ public class Produkt {
      */
     public double getDurchschnittNachfrage()
     {
-        return this.getNachfrageJahr1()/this.getNachfrageJahr2();
+        return (this.getNachfrageJahr2()+this.getNachfrageJahr1())/2;
     }
 
     /**

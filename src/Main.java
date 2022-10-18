@@ -10,7 +10,9 @@ public class Main {
         arrayVonProdukte[1]=ball;
         arrayVonProdukte[2]=hemd;
         Fabrik fabrik=new Fabrik(arrayVonProdukte);
-        fabrik.lieferungOptimaleZahlAufScreen();
+        fabrik.sortiereProdukte();
+        for(Produkt produkt:arrayVonProdukte)
+            System.out.println(produkt.getDurchschnittNachfrage());
 
         System.out.println(" ");
         Produkt[] arrayVonProdukte1=new Produkt[3];
