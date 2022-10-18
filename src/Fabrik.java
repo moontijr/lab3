@@ -1,12 +1,11 @@
-import java.util.Arrays;
 
 public class Fabrik {
 
-    private Produkt[] arrayOfProdukts;
+    private  Produkt[] arrayOfProdukts;
 
-    private Produkt[] a=new Produkt[10];
-    private Produkt[] b=new Produkt[10];
-    private Produkt[] c=new Produkt[10];
+    private Produkt[] a=new Produkt[3];
+    private Produkt[] b=new Produkt[3];
+    private Produkt[] c=new Produkt[3];
     int index1=0;
     int index2=0;
     int index3=0;
@@ -42,7 +41,8 @@ public class Fabrik {
     }
 
     /**
-     * ubung 2 , ordnet in funktion von kategorien zu, mithilfe von 3 HilfsIndexes
+     * ubung 2 , ordnet in funktion von kategorien zu, mithilfe von 3 HilfsIndexes*
+     *
      */
     public void zuordnungKategorie()
     {
@@ -62,6 +62,23 @@ public class Fabrik {
                 index3++;
             }
         }
+
+        System.out.println("Array:");
+        if(index3>0) {
+            for (Produkt produkt : c) {
+                produkt.toStr();
+            }
+        }
+        if(index2>0)
+            for (Produkt produkt:b)
+            {
+                produkt.toStr();
+            }
+        if(index1>0)
+            for(Produkt produkt: a)
+            {
+                produkt.toStr();
+            }
 
     }
 

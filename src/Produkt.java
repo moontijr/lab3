@@ -74,7 +74,11 @@ public class Produkt {
     }
 
 
-    public double getDurchschnittNachfrage() //Arithmetisches Mittel fur die Sortierung
+    /**
+     * Es nimmt das Durschnitt der Nachfrage
+     * @return ein double
+     */
+    public double getDurchschnittNachfrage()
     {
         return this.getNachfrageJahr1()/this.getNachfrageJahr2();
     }
@@ -99,6 +103,11 @@ public class Produkt {
         }
         return optimal;
 
+    }
+
+    public void toStr()
+    {
+        System.out.println("Produs ");
     }
 
 

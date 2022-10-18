@@ -10,16 +10,19 @@ public class Main {
         arrayVonProdukte[1]=ball;
         arrayVonProdukte[2]=hemd;
         Fabrik fabrik=new Fabrik(arrayVonProdukte);
-        //fabrik.sortiereProdukte();
-        //fabrik.zuordnungKategorie();
         fabrik.lieferungOptimaleZahlAufScreen();
 
+        System.out.println(" ");
         Produkt[] arrayVonProdukte1=new Produkt[3];
         arrayVonProdukte1[0]=hemd;
         arrayVonProdukte1[1]=hemd;
         arrayVonProdukte1[2]=ball;
-        fabrik.zuordnungKategorie();
-        fabrik.lieferungOptimaleZahlAufScreen();
+        Fabrik fabrik1=new Fabrik(arrayVonProdukte1);
+
+        fabrik1.lieferungOptimaleZahlAufScreen();
+
+
+        fabrik1.zuordnungKategorie();
 
     }
 }
