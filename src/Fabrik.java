@@ -1,11 +1,11 @@
 
 public class Fabrik {
 
-    private  Produkt[] arrayOfProdukts;
+    private final Produkt[] arrayOfProdukts;
 
-    private Produkt[] a=new Produkt[3];
-    private Produkt[] b=new Produkt[3];
-    private Produkt[] c=new Produkt[3];
+    private final Produkt[] a=new Produkt[3];
+    private final Produkt[] b=new Produkt[3];
+    private final Produkt[] c=new Produkt[3];
     int index1=0;
     int index2=0;
     int index3=0;
